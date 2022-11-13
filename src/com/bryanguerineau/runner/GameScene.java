@@ -14,7 +14,7 @@ public class GameScene extends Scene {
     public GameScene(Parent parent, double v, double v1, boolean b) {
         super(parent, v, v1, b);
         this.backgroundLeft = new staticThings(0,0,"file:/Users/bryanguerineau/IdeaProjects/RunnerProject_off/img/desert.png");
-        this.backgroundRight = new staticThings(0,0,"file:img/desert.png");
+        this.backgroundRight = new staticThings(0,0,"file:/Users/bryanguerineau/IdeaProjects/RunnerProject_off/img/desert.png");
         Camera gameCam = new Camera(0, 0);
 
     }

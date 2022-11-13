@@ -22,7 +22,7 @@ public class staticThings {
     public staticThings(double sizeX, double sizeY, String fileName) {
         this.sizeX = sizeX;
         this.sizeY = sizeY;
-        Image image = new Image("/img/"+fileName);
+        Image image = new Image(fileName);
         this.imageView = new ImageView(fileName);
         this.imageView.setX(sizeX);
         this.imageView.setY(sizeY);

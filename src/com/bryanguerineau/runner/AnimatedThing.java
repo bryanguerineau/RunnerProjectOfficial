@@ -33,4 +33,5 @@ public abstract class AnimatedThing {
     public double getxHero() { return xHero; }
     public double getyHero() { return yHero; }
     public int getRunIndex() { return runIndex; }
+
 }

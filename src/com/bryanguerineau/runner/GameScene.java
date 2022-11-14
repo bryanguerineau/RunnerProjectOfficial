@@ -10,12 +10,14 @@ public class GameScene extends Scene {
     private static staticThings backgroundLeft;
     private static staticThings backgroundRight;
 
+    private Hero heroCharacter;
+
 
     public GameScene(Parent parent, double v, double v1, boolean b) {
         super(parent, v, v1, b);
         this.backgroundLeft = new staticThings(0,0,"file:img/desert.png");
         this.backgroundRight = new staticThings(0,0,"file:img/desert.png");
-        Camera gameCam = new Camera(0, 0);
+        this.heroCharacter = new Hero();
 
     }
 
@@ -25,5 +27,9 @@ public class GameScene extends Scene {
 
     public static staticThings getBackgroundRight() {
         return backgroundRight;
+    }
+
+    public Hero getHeroCharacter() {
+        return heroCharacter;
     }
 }

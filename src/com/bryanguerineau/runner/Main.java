@@ -19,6 +19,7 @@ public class Main extends Application {
 
         pane.getChildren().add(GameScene.getBackgroundLeft().getImageView());
         pane.getChildren().add(GameScene.getBackgroundRight().getImageView());
+        pane.getChildren().add(theScene.getHeroCharacter().getSpriteSheet());
 
         primaryStage.setScene(theScene);
         primaryStage.show();

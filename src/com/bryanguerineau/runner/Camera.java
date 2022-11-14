@@ -13,8 +13,8 @@ public class Camera {
     }
 
     public Camera(int x, int y) {
-        this.x = x;
-        this.y = y;
+        this.x = 0;
+        this.y = 0;
     }
 
     @Override

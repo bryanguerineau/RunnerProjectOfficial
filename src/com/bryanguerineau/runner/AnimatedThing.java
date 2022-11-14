@@ -19,7 +19,7 @@ public abstract class AnimatedThing {
     public ImageView spriteSheetHero;
 
     public AnimatedThing(double xHero, double yHero, String fileName) {
-        Image spriteSheetHeroImage = new Image("file:img/heros.png");
+        Image spriteSheetHeroImage = new Image("file:E:\\Devs\\Runner\\img\\heros.png");
         this.spriteSheetHero = new ImageView(spriteSheetHeroImage);
         this.spriteSheetHero.setX(xHero);
         this.spriteSheetHero.setY(yHero);
@@ -28,10 +28,20 @@ public abstract class AnimatedThing {
         this.xHero = xHero;
     }
 
-    public ImageView getSpriteSheet() { return spriteSheet; }
+
+    public void setxHero(double xHero) { this.xHero = xHero; }
+
+    public void setyHero(double yHero) { this.yHero = yHero; }
+
+    public void setSpriteSheet(ImageView spriteSheet) { this.spriteSheet = spriteSheet; }
+
+    public void setRunIndex(int runIndex) { this.runIndex = runIndex; }
+
 
     public double getxHero() { return xHero; }
     public double getyHero() { return yHero; }
     public int getRunIndex() { return runIndex; }
+
+    public abstract ImageView getSpriteSheet();
 
 }

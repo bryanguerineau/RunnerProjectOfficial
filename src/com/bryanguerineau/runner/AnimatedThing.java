@@ -57,7 +57,7 @@ public abstract class AnimatedThing {
             if (newIndex == maxIndex) {
                 setRunIndex(0);
             } else {
-                setRunIndex(newIndex++);
+                setRunIndex(newIndex+1);
             }
             xHero = getxHero();
             spriteSheetHero.setViewport(new Rectangle2D(getRunIndex()*85,0,85,100));
@@ -69,7 +69,7 @@ public abstract class AnimatedThing {
             } else {
                 xHero = getxHero();
                 spriteSheetHero.setViewport(new Rectangle2D(getJumpIndex()*85,160,85,100));
-                setJumpIndex(newIndex++);
+                setJumpIndex(newIndex+1);
             }
         }
     }

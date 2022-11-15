@@ -3,7 +3,8 @@ package com.bryanguerineau.runner;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.image.ImageView;
 
-public class Hero extends AnimatedThing { // extends permet à Hero d'hériter de toutes les caractéristiques de AnimatedThing
+public class Hero extends AnimatedThing {
+    public static int jump; // extends permet à Hero d'hériter de toutes les caractéristiques de AnimatedThing
 
     public Hero() {
         super(20, 245, "heros");

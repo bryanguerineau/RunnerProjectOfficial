@@ -18,11 +18,12 @@ public class Main extends Application {
         primaryStage.setTitle("Runner");
         Group root = new Group();
         Pane pane = new Pane(root);
-        GameScene theScene = new GameScene(pane, 600,400,true);
+        GameScene theScene = new GameScene(pane, 644,362,true);
 
         pane.getChildren().add(GameScene.getBackgroundLeft().getImageView());
         pane.getChildren().add(GameScene.getBackgroundRight().getImageView());
         pane.getChildren().add(theScene.getHeroCharacter().getSpriteSheet());
+        pane.getChildren().add(theScene.getFoe().getSpriteSheet());
 
         primaryStage.setScene(theScene);
         primaryStage.show();
@@ -30,8 +31,8 @@ public class Main extends Application {
         theScene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent keyEvent) {
-                if (keyEvent.getCode() == KeyCode.SPACE) { // Si appuie de la touche SPACE
-                    Hero.jump=1; //Permet de sauter
+                if (keyEvent.getCode() == KeyCode.SPACE) {
+                    Hero.jump=1;
                 }
             }
         });

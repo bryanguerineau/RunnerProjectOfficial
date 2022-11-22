@@ -44,6 +44,7 @@ public abstract class AnimatedThing {
         setYFoe(yFoe);
     }
 
+    // Setter
 
     public void setxHero(double xHero) { this.xHero = xHero; }
 
@@ -55,16 +56,20 @@ public abstract class AnimatedThing {
 
     public void setJumpIndex(int jumpIndex) { this.jumpIndex = jumpIndex; }
 
+    public abstract ImageView getSpriteSheet();
+
+    public void setXFoe(double x) {this.xFoe = x;}
+    public void setYFoe(double y) {this.yFoe = y;}
+
+    // Getter
+
     public double getxHero() { return xHero; }
     public double getyHero() { return yHero; }
     public int getRunIndex() { return runIndex; }
 
     public int getJumpIndex() { return jumpIndex; }
 
-    public abstract ImageView getSpriteSheet();
-
-    public void setXFoe(double x) {this.xFoe = x;}
-    public void setYFoe(double y) {this.yFoe = y;}
+    // Création de la méthode Update
 
     public void update(long l) {
         int newIndex;

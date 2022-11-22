@@ -55,6 +55,7 @@ public class GameScene extends Scene {
         }
     }
 
+    // Getter
     public static staticThings getBackgroundLeft() {
         return backgroundLeft;
     }

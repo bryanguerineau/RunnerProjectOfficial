@@ -9,12 +9,14 @@ public class staticThings {
     private double sizeX;
     private double  sizeY;
 
+    // Getter
     public ImageView getImageView() { return imageView; }
 
     public double getSizeX() { return this.sizeX; }
 
     public double getSizeY() { return this.sizeY; }
 
+    // Setter
     public void setSizeX(double sizeX) {
         this.sizeX = sizeX;
     }

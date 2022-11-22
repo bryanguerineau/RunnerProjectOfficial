@@ -3,8 +3,6 @@ package com.bryanguerineau.runner;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
-import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Pane;
@@ -29,12 +27,14 @@ public class Main extends Application {
         primaryStage.show();
 
         theScene.setOnKeyPressed(new EventHandler<KeyEvent>() {
+            //*** Cette partie ne fonctionne pas ***
             @Override
             public void handle(KeyEvent keyEvent) {
                 if (keyEvent.getCode() == KeyCode.SPACE) {
                     Hero.jump=1;
                 }
             }
+            // *************************************
         });
     }
 
